@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Форма продажи</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="../index.html">Главная</a>
+				</li>
+				<li>
+					<a href="../pages/index2.html">Купить машину</a>
+				</li>
+				<li>
+					<a>Продать машину</a>
+				</li>
+				<li>
+					<a href="../pages/index1.html">Войти</a>
+				</li>
+				<li>
+					<a href="../pages/index0.html">Зарегистрироваться</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Укажите параметры автомобиля</h1>
+		<form action="https://fom.in.ua/echo" method="post" name="sale">
+			<fieldset>
+				<legend>Выберите тип кузова:</legend>
+				<select name="body_car" id="body_car">
+					<option value="sedan" selected>Седан</option>
+					<option value="van">Фургон</option>
+					<option value="wagon">Универсал</option>
+					<option value="minivan">Минивэн</option>
+					<option value="coupe">Купе</option>
+					<option value="cabriolet">Кабриолет</option>
+					<option value="hatchback">Хэтчбек</option>
+					<option value="pickup">Пикап</option>
+					<option value="suv">Внедорожник</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Выберите страну производства:</legend>
+				<input type="radio" name="Country" id="Austria" value="Austria">
+				<label for="Austria">Австрия</label>
+				<br>
+				<input type="radio" name="Country" id="England" value="England">
+				<label for="England">Англия</label>
+				<br>
+				<input type="radio" name="Country" id="Belgium" value="Belgium">
+				<label for="Belgium">Бельгия</label>
+				<br>
+				<input type="radio" name="Country" id="Bulgaria" value="Bulgaria">
+				<label for="Bulgaria">Болгария</label>
+				<br>
+				<input type="radio" name="Country" id="Hungary" value="Hungary">
+				<label for="Hungary">Венгрия</label>
+				<br>
+				<input type="radio" name="Country" id="Germany" value="Germany">
+				<label for="Germany">Германия</label>
+				<br>
+				<input type="radio" name="Country" id="India" value="India">
+				<label for="India">Индия</label>
+				<br>
+				<input type="radio" name="Country" id="Iran" value="Iran">
+				<label for="Iran">Иран</label>
+				<br>
+				<input type="radio" name="Country" id="Spain" value="Spain">
+				<label for="Spain">Испания</label>
+				<br>
+				<input type="radio" name="Country" id="Ukraine" value="Ukraine" checked>
+				<label for="Ukraine">Украина</label>
+			</fieldset>
+			<fieldset>
+				<legend>Выберите марку:</legend>
+				<input type="radio" name="Brand" id="Acura" value="Acura">
+				<label for="Acura">Acura</label>
+				<br>
+				<input type="radio" name="Brand" id="Alfa_Romeo" value="Alfa_Romeo">
+				<label for="Alfa_Romeo">Alfa Romeo</label>
+				<br>
+				<input type="radio" name="Brand" id="Audi" value="Audi">
+				<label for="Audi">Audi</label>
+				<br>
+				<input type="radio" name="Brand" id="Bentley" value="Bentley">
+				<label for="Bentley">Bentley</label>
+				<br>
+				<input type="radio" name="Brand" id="BMW" value="BMW">
+				<label for="BMW">BMW</label>
+				<br>
+				<input type="radio" name="Brand" id="Chevrolet" value="Chevrolet">
+				<label for="Chevrolet">Chevrolet</label>
+				<br>
+				<input type="radio" name="Brand" id="Ford" value="Ford">
+				<label for="Ford">Ford</label>
+				<br>
+				<input type="radio" name="Brand" id="Harley-Davidson" value="Harley-Davidson">
+				<label for="Harley-Davidson">Harley-Davidson</label>
+				<br>
+				<input type="radio" name="Brand" id="Infiniti" value="Infiniti">
+				<label for="Infiniti">Infiniti</label>
+				<br>
+				<input type="radio" name="Brand" id="Jaguar" checked value="Jaguar">
+				<label for="Jaguar">Jaguar</label>
+			</fieldset>
+			<fieldset>
+				<legend>Цена:</legend>
+				<label for="price_sale">Минимальная цена продажи: </label>
+				<input type="number" name="price_sale" id="price_sale" value="0" min="0">
+				<select name="currency">
+					<option value="dollar" selected>$</option>
+					<option value="euro">€</option>
+				</select>
+				<p>
+					<input type="checkbox" name="bargain" id="bargain" checked>
+					<label for="bargain">Возможен торг</label>
+					<input type="checkbox" name="exchange_property" id="exchange_property">
+					<label for="exchange_property">Возможен обмен на недвижимость</label>
+					<input type="checkbox" name="exchange_car" id="exchange_car">
+					<label for="exchange_car">Возможен обмен на автомобиль</label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Год выпуска:</legend>
+				<label for="year_of_issue">Укажите год выпуска:</label>
+				<select name="year_of_issue" id="year_of_issue">
+					<option value="2009" selected>2009</option>
+					<option value="2010">2010</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Состояние:</legend>
+				<input type="checkbox" name="Non_cleared" id="Non_cleared">
+				<label for="Non_cleared">Нерастаможенна</label>
+				<br>
+				<input type="checkbox" name="In_credit" id="In_credit" checked>
+				<label for="In_credit">В кредите</label>
+				<br>
+				<input type="checkbox" name="Confiscate" id="Confiscate">
+				<label for="Confiscate">Конфискат</label>
+				<br>
+				<input type="checkbox" name="Broken" id="Broken">
+				<label for="Broken">Битая (После ДТП)</label>
+				<br>
+				<input type="checkbox" name="repair_needed" id="repair_needed">
+				<label for="repair_needed">Не на ходу</label>
+				<br>
+			</fieldset>
+			<fieldset>
+				<legend>Технические характеристики:</legend>
+				<p>Топливо</p>
+				<input type="radio" name="Fuel" id="Petrol" value="Petrol" checked>
+				<label for="Petrol">Бензин</label>
+				<br>
+				<input type="radio" name="Fuel" id="Diesel" value="Diesel">
+				<label for="Diesel">Дизель</label>
+				<br>
+				<input type="radio" name="Fuel" id="Gas" value="Gas">
+				<label for="Gas">Газ</label>
+				<br>
+				<input type="radio" name="Fuel" id="Gas_Gasoline" value="Gas_Gasoline">
+				<label for="Gas_Gasoline">Газ/бензин</label>
+				<br>
+				<input type="radio" name="Fuel" id="Hybrid" value="Hybrid">
+				<label for="Hybrid">Гибрид</label>
+				<br>
+				<input type="radio" name="Fuel" id="Electro" value="Electro">
+				<label for="Electro">Электро</label>
+				<br>
+				<p>КПП</p>
+				<input type="radio" name="Transmission" id="Mechanics" value="Mechanics" checked>
+				<label for="Mechanics">Ручная / Механика</label>
+				<br>
+				<input type="radio" name="Transmission" id="Machine" value="Machine">
+				<label for="Machine">Автомат</label>
+				<br>
+				<input type="radio" name="Transmission" id="Tiptronic" value="Tiptronic">
+				<label for="Tiptronic">Типтроник</label>
+				<br>
+				<p>Тип привода</p>
+				<input type="radio" name="Drive" id="four_wheel_drive" value="four_wheel_drive" checked>
+				<label for="four_wheel_drive">Полный</label>
+				<br>
+				<input type="radio" name="Drive" id="front_wheel_drive" value="front_wheel_drive">
+				<label for="front_wheel_drive">Передний</label>
+				<br>
+				<input type="radio" name="Drive" id="rear_drive" value="rear_drive">
+				<label for="rear_drive">Задний</label>
+				<br>
+			</fieldset>
+			<fieldset>
+				<legend>Выберите цвет:</legend>
+				<select name="Colour">
+					<option value="red" selected>Красный</option>
+					<option value="orange">Оранжевый</option>
+					<option value="yellow">Желный</option>
+					<option value="green">Зеленый</option>
+					<option value="ligth_blue">Голубой</option>
+					<option value="blue">Синий</option>
+					<option value="purple">Фиолетовый</option>
+					<option value="grey">Серый</option>
+					<option value="white">Белый</option>
+					<option value="black">Черный</option>
+				</select>
+				<input type="checkbox" name="metallic" id="metallic">
+				<label for="metallic">Металлик</label>
+			</fieldset>
+			<fieldset>
+				<legend>Комфорт:</legend>
+				<select size="11" multiple name="comfort">
+					<option value="Power_steering">Усилитель руля</option>
+					<option value="Leather_interior">Кожаный салон</option>
+					<option value="Luke">Люк</option>
+					<option value="El_window_lifter" selected>Эл. стеклоподъемники</option>
+					<option value="On_board_computer">Бортовой компьютер</option>
+					<option value="Air_conditioning" selected>Кондиционер</option>
+					<option value="Climate_control">Климат контроль</option>
+					<option value="Cruise_control">Круиз контроль</option>
+					<option value="Parktronic">Парктроник</option>
+					<option value="Heated_seats">Подогрев сидений</option>
+					<option value="Rain_sensor">Сенсор дождя</option>>
+				</select>
+				<p>Используйте Ctrl для выбора нескольких вариантов</p>
+			</fieldset>
+			<fieldset>
+				<legend>Объявление</legend>
+				<p>Текст объявления:</p>
+				<textarea rows="9" cols="40" name="text"></textarea>
+				<br>
+				<label for="photo">Загрузите фотографию</label>
+				<input type="file" name="photo" id="photo">
+			</fieldset>
+			<br>
+			<button type="submit">Разместить</button>
+			<button type="reset">Сброс выбора</button>
+		</form>
+	</main>
+	<footer>
+		<h6>Контактная информация</h6>
+		<ul>
+			<li>
+				<a href="mailto:help@exemple.com">help@exemple.com</a>
+			</li>
+			<li>
+				<a href="tel:+380005852587">+38-000-58-52-587</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+
+</html>
