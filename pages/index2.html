@@ -31,11 +31,12 @@
 		</nav>
 	</header>
 	<main>
-		<h1>Поиск автомобиля по параметрам</h1>
+		<h1>Покупка автомобиля</h1>
+		<p>Поиск автомобиля по параметрам</p>
 		<form action="https://fom.in.ua/echo" method="get" name="buy">
 			<fieldset>
 				<legend>Выберите тип кузова:</legend>
-				<select name="body_car" id="body_car">
+				<select multiple size="9" name="body_car">
 					<option value="sedan" selected>Седан</option>
 					<option value="van">Фургон</option>
 					<option value="wagon">Универсал</option>
@@ -46,6 +47,7 @@
 					<option value="pickup">Пикап</option>
 					<option value="suv">Внедорожник</option>
 				</select>
+				<p>Используйте Ctrl для выбора нескольких вариантов</p>
 			</fieldset>
 			<fieldset>
 				<legend>Выберите страну производства:</legend>
